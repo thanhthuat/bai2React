@@ -72,7 +72,7 @@ function UpdateUser(props) {
                                             disabled
                                         />
                                         <ErrorMessage name="taiKhoan">
-                                            {/* {(msg) => <Alert severity="warning">{msg}</Alert>} */}
+                                           
                                         </ErrorMessage>
 
                                     </Grid>
@@ -89,7 +89,7 @@ function UpdateUser(props) {
                                             defaultValue={matKhau}
                                         />
                                         <ErrorMessage name="matKhau">
-                                            {/* {(msg) => <Alert severity="warning">{msg}</Alert>} */}
+                                          
                                         </ErrorMessage>
                                     </Grid>
                                     <Grid item xs={12} sm={5}>
@@ -108,14 +108,14 @@ function UpdateUser(props) {
                                             {/* {(msg) => <Alert severity="warning">{msg}</Alert>} */}
                                         </ErrorMessage>
                                     </Grid>
-                                    <Grid item xs={12} sm={3}>
+                                    <Grid item xs={12} sm={6}>
                                     <FormControl fullWidth variant="outlined" style={{ margin: "spacing(1)" }}>
                                             <InputLabel style={{ backgroundColor: "white", padding: "0 5px" }} id="demo-simple-select-outlined-label">Mã Nhóm</InputLabel>
                                             <Select
                                                 labelId="demo-simple-select-label"
                                                 id="maNhom"
                                                 name="maNhom"
-                                                defaultValue={maNhom}
+                                                defaultValue='GP01'
                                                 onChange={formikProps.handleChange}
                                             >
                                                 <MenuItem value="GP00">GP00</MenuItem>
@@ -124,22 +124,7 @@ function UpdateUser(props) {
                                         </FormControl>
                                     </Grid>
 
-                                    <Grid item xs={12} sm={4}>
-                                        <FormControl fullWidth variant="outlined" style={{ margin: "spacing(1)" }}>
-                                            <InputLabel style={{ backgroundColor: "white", padding: "0 5px" }} id="demo-simple-select-outlined-label">Loại người dùng</InputLabel>
-                                            <Select
-                                                labelId="demo-simple-select-label"
-                                                id="maLoaiNguoiDung"
-                                                name="maLoaiNguoiDung"
-                                                defaultValue={maLoaiNguoiDung}
-                                                onChange={formikProps.handleChange}
-                                            >
-                                                <MenuItem value="QuanTri">QuanTri</MenuItem>
-                                                <MenuItem value="KhachHang">KhachHang</MenuItem>
-
-                                            </Select>
-                                        </FormControl>
-                                    </Grid>
+                                   
 
                                     <Grid item xs={12} sm={6}>
                                         <TextField
